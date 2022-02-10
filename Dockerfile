@@ -8,7 +8,7 @@ RUN npm install -g concurrently
 
 COPY package.json package-lock.json nx.json ./
 
-RUN npm install --production --ignore-scripts
+RUN npm install --ignore-scripts
 
 ENV API_PORT=3333
 ENV PORT=4200
