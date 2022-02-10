@@ -17,4 +17,4 @@ EXPOSE 80
 # dependencies that nestjs needs
 COPY ./ ./
 
-CMD concurrently --kill-others "nx serve api" "nx serve ts-starter --host 0.0.0.0 --disable-host-check"
+CMD concurrently --kill-others "nx serve api" "nx serve ts-starter --host 0.0.0.0 --port 80 --disable-host-check"
